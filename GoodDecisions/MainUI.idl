@@ -1,0 +1,29 @@
+// MainUI.idl : type library source for MainUI.exe
+
+// This file will be processed by the MIDL compiler to produce the
+// type library (MainUI.tlb).
+
+[ uuid(D301A459-2572-4220-88ED-88428319A5AC), version(1.0) ]
+library MainUI
+{
+	importlib("stdole32.tlb");
+	importlib("stdole2.tlb");
+
+	//  Primary dispatch interface for CMainUIDoc
+	
+	[ uuid(A999E970-850C-484C-926C-B720F4DF4CD3) ]
+	dispinterface IMainUI
+	{
+		properties:
+			
+		methods:
+	};
+
+	//  Class information for CMainUIDoc
+	
+	[ uuid(6DA093B9-25B0-41AD-888E-F3C7C3ED7879) ]
+	coclass MainUI
+	{
+		[default] dispinterface IMainUI;
+	};
+};
